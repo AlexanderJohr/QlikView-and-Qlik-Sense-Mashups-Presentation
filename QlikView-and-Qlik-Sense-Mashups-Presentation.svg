@@ -3087,6 +3087,87 @@ namespace(this, &quot;sozi.player&quot;, function (exports, window) {
     @depend links.js
 */
 </script>
+
+  <style>
+
+    @keyframes flickerAnimation {
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+    }
+    @-o-keyframes flickerAnimation{
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+    }
+    @-moz-keyframes flickerAnimation{
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+    }
+    @-webkit-keyframes flickerAnimation{
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+    }
+    .animate-flicker1 {
+    -webkit-animation: flickerAnimation 6s infinite;
+    -moz-animation: flickerAnimation 6s infinite;
+    -o-animation: flickerAnimation 6s infinite;
+    animation: flickerAnimation 6s infinite;
+    }
+
+    .animate-flicker2 {
+    -webkit-animation: flickerAnimation 6s infinite;
+    -moz-animation: flickerAnimation 6s infinite;
+    -o-animation: flickerAnimation 6s infinite;
+    animation: flickerAnimation 6s infinite;
+    -webkit-animation-delay: 1s; /* Chrome, Safari, Opera */
+    animation-delay: 1s;
+    }
+
+    .animate-flicker3 {
+    -webkit-animation: flickerAnimation 6s infinite;
+    -moz-animation: flickerAnimation 6s infinite;
+    -o-animation: flickerAnimation 6s infinite;
+    animation: flickerAnimation 6s infinite;
+    -webkit-animation-delay: 2s; /* Chrome, Safari, Opera */
+    animation-delay: 2s;
+    }
+
+
+    .animate-flicker4 {
+    -webkit-animation: flickerAnimation 6s infinite;
+    -moz-animation: flickerAnimation 6s infinite;
+    -o-animation: flickerAnimation 6s infinite;
+    animation: flickerAnimation 6s infinite;
+    -webkit-animation-delay: 3s; /* Chrome, Safari, Opera */
+    animation-delay: 3s;
+    }
+
+    .animate-flicker5 {
+    -webkit-animation: flickerAnimation 6s infinite;
+    -moz-animation: flickerAnimation 6s infinite;
+    -o-animation: flickerAnimation 6s infinite;
+    animation: flickerAnimation 6s infinite;
+    -webkit-animation-delay: 4s; /* Chrome, Safari, Opera */
+    animation-delay: 4s;
+    }
+
+    .animate-flicker6 {
+    -webkit-animation: flickerAnimation 6s infinite;
+    -moz-animation: flickerAnimation 6s infinite;
+    -o-animation: flickerAnimation 6s infinite;
+    animation: flickerAnimation 6s infinite;
+    -webkit-animation-delay: 5s; /* Chrome, Safari, Opera */
+    animation-delay: 5s;
+    }
+
+
+
+
+  </style>
+  
   <style
      ns1:version="13.11-30213629"
      id="sozi-style">/*
@@ -6262,16 +6343,17 @@ namespace(this, &quot;sozi.player&quot;, function (exports, window) {
     <g
        transform="translate(38895.813,29541.518)"
        id="g27840">
+      
       <path
          transform="translate(-10361.98,3.2202148e-5)"
          style="fill:#4565dc;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
          d="m 28094.272,21039.37 c 0,7.796 -4.309,14.565 -10.875,18.053 l -162.063,91.084 c -3.283,2.461 -7.385,3.692 -11.692,3.692 -4.308,0 -8.411,-1.231 -11.694,-3.692 l -162.063,-91.084 c -6.565,-3.488 -10.875,-10.257 -10.875,-18.053 l 0,-184.629 c 0,-7.796 4.31,-14.565 10.875,-18.053 l 162.063,-91.083 c 3.283,-2.463 7.386,-3.693 11.694,-3.693 4.307,0 8.409,1.23 11.692,3.693 l 162.063,91.083 c 6.566,3.488 10.875,10.257 10.875,18.053 l 0,184.629 m -184.63,-253.351 -38.773,21.948 120.829,69.545 40.209,-22.771 -122.265,-68.722 m -122.265,68.722 122.265,68.723 40.207,-22.567 -120.623,-69.748 -41.849,23.592 m -21.336,172.525 123.085,69.34 0,-137.653 -123.085,-69.132 0,137.445 m 287.2,0 0,-137.445 -123.085,69.132 0,137.653 123.085,-69.34 z"
-         id="path28731" />
+         id="path28731"/>
       <path
          transform="translate(-10361.98,3.2202148e-5)"
          style="fill:#4565dc;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
          d="m 27413.756,20841.374 a 71.42012,71.42012 0 0 1 71.421,71.42 71.42012,71.42012 0 0 1 -71.421,71.42 71.42012,71.42012 0 0 1 -71.42,-71.42 71.42012,71.42012 0 0 1 71.42,-71.42 m 0,178.552 c 78.919,0 142.842,31.959 142.842,71.419 l 0,35.711 -285.682,0 0,-35.711 c 0,-39.46 63.921,-71.419 142.84,-71.419 z"
-         id="path27730" />
+         id="path27730"/>
       <path
          transform="translate(-10361.98,3.2202148e-5)"
          style="fill:#4565dc;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -6281,32 +6363,50 @@ namespace(this, &quot;sozi.player&quot;, function (exports, window) {
          transform="translate(-10361.98,3.2202148e-5)"
          style="fill:#e60000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
          d="m 27547.484,20939.588 -3.203,-2.916 c -11.377,-10.316 -18.887,-17.141 -18.887,-25.471 0,-6.825 5.346,-12.148 12.15,-12.148 3.843,0 7.533,1.79 9.94,4.595 2.408,-2.805 6.096,-4.595 9.94,-4.595 6.803,0 12.15,5.323 12.15,12.148 0,8.33 -7.511,15.155 -18.886,25.471 l -3.204,2.916 z"
-         id="heart5" />
+         id="heart5" class="animate-flicker1">
+      <!--  <animateTransform
+          xlink:href="#heart5"
+      attributeName="transform" type="translate"
+      begin="0" dur="5"
+          repeatDur="05:00"
+      repeatCount="indefinite"
+      from="0,0" to="0,-300"
+      additive="sum" />-->
+
+        <!--
+        <animate id="anim2" attributeName="opacity"
+         begin="anim1.end" dur="0.5"
+
+      from="1" to="0"
+      fill="freeze" />-->
+
+      </path>
+
       <path
          transform="translate(-10361.98,3.2202148e-5)"
          style="fill:#e60000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
          d="m 27286.491,20985.015 -3.203,-2.917 c -11.377,-10.316 -18.887,-17.141 -18.887,-25.47 0,-6.825 5.346,-12.148 12.149,-12.148 3.844,0 7.534,1.789 9.941,4.594 2.408,-2.805 6.097,-4.594 9.941,-4.594 6.802,0 12.149,5.323 12.149,12.148 0,8.329 -7.511,15.154 -18.887,25.47 l -3.203,2.917 z"
-         id="heart2" />
+         id="heart2" class="animate-flicker2"/>
       <path
          transform="translate(-10361.98,3.2202148e-5)"
          style="fill:#e60000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
          d="m 27252.88,20862.501 -3.202,-2.916 c -11.377,-10.316 -18.888,-17.142 -18.888,-25.469 0,-6.825 5.348,-12.15 12.152,-12.15 3.841,0 7.532,1.789 9.938,4.595 2.408,-2.806 6.097,-4.595 9.942,-4.595 6.802,0 12.148,5.325 12.148,12.15 0,8.327 -7.51,15.153 -18.885,25.469 l -3.205,2.916 z"
-         id="heart1" />
+         id="heart1" class="animate-flicker3"/>
       <path
          transform="translate(-10361.98,3.2202148e-5)"
          style="fill:#e60000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
          d="m 27618.251,20858.165 -3.201,-2.917 c -11.377,-10.315 -18.887,-17.141 -18.887,-25.47 0,-6.824 5.346,-12.149 12.149,-12.149 3.843,0 7.532,1.789 9.939,4.595 2.408,-2.806 6.099,-4.595 9.941,-4.595 6.804,0 12.15,5.325 12.15,12.149 0,8.329 -7.51,15.155 -18.887,25.47 l -3.204,2.917 z"
-         id="heart4" />
+         id="heart4" class="animate-flicker4"/>
       <path
          transform="translate(-10361.98,3.2202148e-5)"
          style="fill:#e60000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
          d="m 27606.324,21053.318 -3.202,-2.915 c -11.375,-10.318 -18.885,-17.142 -18.885,-25.47 0,-6.826 5.345,-12.151 12.149,-12.151 3.843,0 7.532,1.791 9.938,4.595 2.409,-2.804 6.099,-4.595 9.942,-4.595 6.804,0 12.15,5.325 12.15,12.151 0,8.328 -7.509,15.152 -18.886,25.47 l -3.206,2.915 z"
-         id="heart6" />
+         id="heart6" class="animate-flicker5"/>
       <path
          transform="translate(-10361.98,3.2202148e-5)"
          style="fill:#e60000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
          d="m 27205.177,21053.318 -3.203,-2.915 c -11.376,-10.318 -18.887,-17.142 -18.887,-25.47 0,-6.826 5.346,-12.151 12.149,-12.151 3.844,0 7.535,1.791 9.941,4.595 2.408,-2.804 6.097,-4.595 9.94,-4.595 6.804,0 12.15,5.325 12.15,12.151 0,8.328 -7.511,15.152 -18.888,25.47 l -3.202,2.915 z"
-         id="heart3" />
+         id="heart3" class="animate-flicker6"/>
       <g
          id="g9956"
          transform="matrix(0.94174559,0,0,0.94174559,537.98509,1605.0386)">
